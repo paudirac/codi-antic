@@ -1,0 +1,65 @@
+#!/usr/bin/env python2.4
+# -*- coding: UTF-8 -*-
+
+import os,sys,Gnuplot,time
+from sys_info import SysInfo
+from file_managers import frames
+
+nom_fitxer_stressos = "historia_stress"
+
+def wait(for_this=0.0):
+    time.sleep(for_this)
+
+def main(directori):
+    g = Gnuplot.Gnuplot()
+    nom_fitxer = os.path.join(directori, nom_fitxer_stressos)
+    sys_info = SysInfo(open(nom_fitxer).readlines()[0])
+    print sys_info
+
+#    g("set pm3d transparent")
+#     g("set samples 25,25")
+    g("set isosamples %d,%d" % (sys_info.NX, sys_info.NY))
+#     g("set pm3d at b")
+    g("set dgrid %d,%d" % (sys_info.NX, sys_info.NY))
+
+    for frame_info, stressos in frames(nom_fitxer, sys_info.phys_size):
+        g.reset()
+        g("set title '%s'" % frame_info)
+        stressos = [(x, y, sxx) for i, x, y, sxx, sxy, syy in stressos]
+        g.splot(Gnuplot.Data(stressos, with="lines"))
+        wait()
+    
+#     for line in open(nom_fitxer).readlines()[1:]:
+#         if not counter % 2 == 0:
+#             punts = line.split(":")[1:-1]
+#             punts = [tuple(map(float,tuple(punt.split()))) for punt in punts]
+# #             to_plot = [(punt[0],punt[1]) for punt in punts]
+# #             to_plot = [(punt[0],punt[2]) for punt in punts]
+#             to_plot = [(punt[1],punt[2],punt[3]) for punt in punts]
+#             xs = [x for x,y,z in to_plot]
+#             ys = [y for x,y,z in to_plot]
+#             zs = [z for x,y,z in to_plot]
+#             g("set xrange[%f:%f]" % (min(xs), max(xs)))
+#             g("set yrange[%f:%f]" % (min(ys), max(ys)))
+#             g("set zrange[%f:%f]" % (min(zs), max(zs)))
+#             g("set title '%s'" % title)
+#             g.splot(Gnuplot.Data(to_plot))#, with="lines"))
+# #             for punt in punts:
+# #                 print punt[3],punt[4],punt[5]
+# #             print title
+# #             print to_plot[0]
+# #            wait()
+#         else:
+#             snap, t = line.split()
+#             strain = 2. * V * float(t) / ((NX - 0.5) * delta_x)
+#             title = "frame: %s t = %s e_strain = %s" % (snap,t,str(strain))
+#         counter = counter + 1
+        
+if  __name__ == "__main__":
+    directori = None
+    try:
+        directori = sys.argv[1]
+    except: pass
+
+    if directori is None: directroi = "./"
+    main (directori)

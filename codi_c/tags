@@ -1,0 +1,134 @@
+FREE_POINTER	macroutils.h	/^#define FREE_POINTER(p) do { if ((p) != 0) { free(/
+Mmain	main.c	/^main (void)$/
+abort_for_open_failure	data.c	/^abort_for_open_failure (const char * file_name)$/
+abort_no_random	inicia_cristall.c	/^abort_no_random ()$/
+bottom_reflexive_force	odedef_parets.c	/^bottom_reflexive_force (double t, const double sys/
+boundaries_alloc	boundaries.c	/^boundaries_alloc (void)$/
+boundaries_free	boundaries.c	/^boundaries_free (void)$/
+boundaries_resolve_boundary_conflicts	boundaries.c	/^boundaries_resolve_boundary_conflicts (void)$/
+boundary_resolve_bottom_reflexive_up_free	boundaries.c	/^boundary_resolve_bottom_reflexive_up_free (void)$/
+boundary_resolve_couette	boundaries.c	/^boundary_resolve_couette (void)$/
+boundary_resolve_default	boundaries.c	/^int boundary_resolve_default (void) { return 0; }$/
+cells_alloc	cells.c	/^cells_alloc (void)$/
+cells_alloc_memory	cells.c	/^int cells_alloc_memory (void)$/
+cells_calc_sizes_couette	cells.c	/^cells_calc_sizes_couette (void)$/
+cells_calc_sizes_free	cells.c	/^cells_calc_sizes_free (void) \/\/ no m'agrada el nom/
+cells_calculate	cells.c	/^cells_calculate (void)$/
+cells_free	cells.c	/^cells_free (void)$/
+cells_loop_force	cells.c	/^cells_loop_force (double t, const double sys[],$/
+cells_loop_function	cells.c	/^cells_loop_function (double t, const double sys[],/
+cells_pinta_neighbour_cells	cells.c	/^cells_pinta_neighbour_cells (void)$/
+cells_update_cells_	cells.c	/^cells_update_cells_ (void)$/
+data_alloc	data.c	/^data_alloc (void)$/
+data_extract	data.c	/^data_extract (void)$/
+data_free	data.c	/^data_free (void)$/
+data_print	data.c	/^data_print (const int snap)$/
+dimensions_alloc	sistema.c	/^dimensions_alloc (void)$/
+dimensions_copy	sistema.c	/^dimensions_copy (dimensions *dest, dimensions *src/
+dimensions_free	sistema.c	/^dimensions_free (dimensions *dim_)$/
+dr_writer_fin	dr_writer.c	/^dr_writer_fin (FILE * pfile)$/
+dr_writer_init	dr_writer.c	/^dr_writer_init (FILE * pfile)$/
+dr_writer_write_frame	dr_writer.c	/^dr_writer_write_frame (FILE * pfile, const int sna/
+energia_de_forca	odedef.c	/^energia_de_forca (const double t, double f[],const/
+energy_alloc	energy.c	/^energy_alloc (void)$/
+energy_couette	energy.c	/^energy_couette (const double t, double ene[], cons/
+energy_default	energy.c	/^energy_default (const double t, double ene[], cons/
+energy_free	energy.c	/^energy_free (void)$/
+energy_func	energy.c	/^energy_func (double t, const double sys[], double /
+euler_simple_control_alloc	euler_simple.c	/^euler_simple_control_alloc (void)$/
+euler_simple_control_init	euler_simple.c	/^euler_simple_control_init (void *vstate,$/
+euler_simple_free	euler_simple.c	/^euler_simple_free (void *vstate)$/
+euler_simple_hadjust	euler_simple.c	/^euler_simple_hadjust (void *vstate, size_t dim, un/
+evolve	evolve.c	/^int evolve (void)$/
+evolve_setup	evolve.c	/^evolve_setup (void)$/
+evolve_to_ti	evolve.c	/^evolve_to_ti ()$/
+forca_couette	odedef.c	/^forca_couette (const double t, double f[],const do/
+forca_default	odedef.c	/^forca_default (const double t, double f[],const do/
+forca_default_amb_bonds	odedef.c	/^forca_default_amb_bonds (const double t, double f[/
+forca_morse	odedef.c	/^forca_morse (const double t, double f[], const dou/
+gsl_alloc	gsl_stuff.c	/^gsl_alloc (void)$/
+gsl_evolve_to	gsl_stuff.c	/^gsl_evolve_to (const double ti)$/
+gsl_free	gsl_stuff.c	/^gsl_free (void) {$/
+gsl_odeiv_control_euler_simple_new	euler_simple.c	/^gsl_odeiv_control_euler_simple_new (const double h/
+head_a_fi_de_llista	cells.c	/^head_a_fi_de_llista (void)$/
+index_y	sistema.h	/^#define index_y(index_x) ((index_x) + sys_size)$/
+inicia_cristall_add_random_perturbation_if_necessary	inicia_cristall.c	/^inicia_cristall_add_random_perturbation_if_necessa/
+inicia_cristall_add_surface_steps	inicia_cristall.c	/^inicia_cristall_add_surface_steps (void)$/
+inicia_cristall_add_surface_steps_pero_nomes_un	inicia_cristall.c	/^inicia_cristall_add_surface_steps_pero_nomes_un (v/
+inicia_cristall_add_surface_vacancies	inicia_cristall.c	/^inicia_cristall_add_surface_vacancies (void)$/
+inicia_cristall_add_vacancies	inicia_cristall.c	/^inicia_cristall_add_vacancies (void)$/
+inicia_cristall_paret_commensurada_amb_x	inicia_cristall.c	/^inicia_cristall_paret_commensurada_amb_x (void)$/
+inicia_cristall_paret_commensurada_amb_y	inicia_cristall.c	/^inicia_cristall_paret_commensurada_amb_y (void)$/
+inicia_cristall_sistema_orientat_x	inicia_cristall.c	/^inicia_cristall_sistema_orientat_x (void)$/
+inicia_cristall_sistema_orientat_y	inicia_cristall.c	/^inicia_cristall_sistema_orientat_y (void)$/
+inicia_neighbour_cell_map_basic_geometry	cells.c	/^inicia_neighbour_cell_map_basic_geometry (void)$/
+inicia_neighbour_cell_map_couette_geometry	cells.c	/^inicia_neighbour_cell_map_couette_geometry (void)$/
+inicia_sys_new_crystall	sistema.c	/^inicia_sys_new_crystall (double *sys_)$/
+ioutils_close_pfile	ioutils.c	/^ioutils_close_pfile (FILE *pfile)$/
+ioutils_get_pfile	ioutils.c	/^ioutils_get_pfile (const char *filename)$/
+left_xu	odedef_parets.c	/^left_xu (double t, const double sys[],$/
+left_y	odedef_parets.c	/^left_y (double t, const double sys[],$/
+list_a_fi_de_llista	cells.c	/^list_a_fi_de_llista (void)$/
+load_sys	sistema.c	/^load_sys (char * fitxer_inici, const int NX_EXTRA)/
+log_close_logfile	ioutils.c	/^log_close_logfile (void)$/
+log_evolution	evolve.c	/^log_evolution (const int i)$/
+log_init_logfile	ioutils.c	/^log_init_logfile ()$/
+log_system	sistema.c	/^log_system (void)$/
+log_to_logfile	ioutils.c	/^log_to_logfile (char *c, char *filename, int linen/
+minima_imatge	odedef.c	/^#define minima_imatge(a, b) ( abs( (a) ) < abs( (b/
+neighbour_cell_a_no_neighbour	cells.c	/^neighbour_cell_a_no_neighbour (void)$/
+no_es_paret	sistema.h	/^#define no_es_paret(index) ((index) < phys_size)$/
+no_random_seed	random_generator.c	/^no_random_seed (void)$/
+no_rng_error_abortion	random_generator.c	/^no_rng_error_abortion (char * caller)$/
+none_force	odedef_parets.c	/^none_force (double t, const double sys[],$/
+null_v_abort	evolve.c	/^null_v_abort ()$/
+ode_func	odedef.c	/^ode_func (double t, const double sys[],$/
+odedef_alloc	odedef.c	/^odedef_alloc (void)$/
+odedef_free	odedef.c	/^odedef_free (void)$/
+odedef_get_forca_handle	odedef.c	/^odedef_get_forca_handle (void)$/
+odedef_get_ode_handle	odedef.c	/^ode_function_pointer odedef_get_ode_handle (void) /
+odedef_parets_alloc	odedef_parets.c	/^odedef_parets_alloc (void)$/
+odedef_parets_energia	odedef_parets.c	/^odedef_parets_energia (double t, const double sys[/
+odedef_parets_esborra_forces_espuries	odedef_parets.h	/^#define odedef_parets_esborra_forces_espuries(f) d/
+odedef_parets_forces	odedef_parets.c	/^odedef_parets_forces (double t, const double sys[]/
+odedef_parets_free	odedef_parets.c	/^odedef_parets_free (void)$/
+odedef_parets_mode_name	odedef_parets.c	/^odedef_parets_mode_name (const int mode)$/
+odedef_random_alloc	odedef_random.c	/^odedef_random_alloc (void)$/
+odedef_random_evolve_to	odedef_random.c	/^odedef_random_evolve_to (const double ti)$/
+odedef_random_free	odedef_random.c	/^odedef_random_free (void)$/
+output_settings_init	output_settings.c	/^output_settings_init (void)$/
+print_frame_header	dr_writer.c	/^print_frame_header (FILE * pfile, const int snap)$/
+print_header	dr_writer.c	/^print_header (FILE * pfile)$/
+print_particles	dr_writer.c	/^print_particles (FILE * pfile, const double * sys)/
+r2_ab	boundaries.c	/^r2_ab (const int a, const int b, const double sys[/
+r2_ab_couette	boundaries.c	/^r2_ab_couette (const int a, const int b, const dou/
+r2_ab_default	boundaries.c	/^r2_ab_default (const int a, const int b, const dou/
+random_evolve	odedef_random.c	/^random_evolve (double sys[], const double t)$/
+random_generator_alloc	random_generator.c	/^random_generator_alloc (void)$/
+random_generator_free	random_generator.c	/^random_generator_free (void)$/
+random_generator_get_generator	random_generator.c	/^random_generator_get_generator (char * caller)$/
+report	ioutils.c	/^report (char *c)$/
+right_xu	odedef_parets.c	/^right_xu (double t, const double sys[],$/
+right_y	odedef_parets.c	/^right_y (double t, const double sys[],$/
+string_utils_filename	string_utils.c	/^string_utils_filename (const char *prefixe, const /
+string_utils_zfill	string_utils.c	/^string_utils_zfill (const int n, const int digits)/
+sys_alloc	sistema.c	/^sys_alloc (void)$/
+sys_calc_dimensions	sistema.c	/^sys_calc_dimensions (void)$/
+sys_dimensions_handle	sistema.c	/^dimensions * sys_dimensions_handle (void)$/
+sys_engineering_strain	sistema.c	/^sys_engineering_strain (void)$/
+sys_free	sistema.c	/^sys_free (void)$/
+sys_handle	sistema.c	/^double * sys_handle (void) { return sys; }$/
+sys_init_configuration	sistema.c	/^sys_init_configuration (void)$/
+sys_initial_dimensions_handle	sistema.c	/^dimensions * sys_initial_dimensions_handle (void)$/
+sys_paret_L_fin	sistema.h	/^#define sys_paret_L_fin()  ((phys_size + paret_siz/
+sys_paret_L_init	sistema.h	/^#define sys_paret_L_init() ((phys_size))$/
+sys_paret_R_fin	sistema.h	/^#define sys_paret_R_fin()  ((phys_size + 2 * paret/
+sys_paret_R_init	sistema.h	/^#define sys_paret_R_init() ((phys_size + paret_siz/
+sys_pinta_dimensions	sistema.c	/^sys_pinta_dimensions (void)$/
+sys_renormalize_for_vacancies	sistema.c	/^sys_renormalize_for_vacancies (int vacancies)$/
+sys_x_distance	sistema.c	/^double sys_x_distance (void) \/\/ Això és la dist�/
+sys_y_distance	sistema.c	/^double sys_y_distance (void) \/\/ Això és la dist�/
+update_sistema_then_cells	evolve.c	/^update_sistema_then_cells (void)$/
+update_ti	evolve.c	/^update_ti (const int i)$/
+xmalloc	memoria.c	/^xmalloc (size_t size)$/
+xmalloc_	memoria.c	/^xmalloc_ (size_t size)$/

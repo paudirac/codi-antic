@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/haleymvctest/!svn/ver/4/trunk/HaleyMVCLib/ViewTypes/ViewAttributes
+END
+HideInViewAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/haleymvctest/!svn/ver/4/trunk/HaleyMVCLib/ViewTypes/ViewAttributes/HideInViewAttribute.cs
+END
+CaptionAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/haleymvctest/!svn/ver/4/trunk/HaleyMVCLib/ViewTypes/ViewAttributes/CaptionAttribute.cs
+END
+UIHintAttribute.cs
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/haleymvctest/!svn/ver/4/trunk/HaleyMVCLib/ViewTypes/ViewAttributes/UIHintAttribute.cs
+END
